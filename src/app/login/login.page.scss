@@ -1,0 +1,89 @@
+ion-content {
+  --overflow: hidden;
+  --background: linear-gradient(#FF217A, #FF4D4D);
+}
+
+.login-background-image {
+  height: 50%;
+  background: url("../../assets/imgs/login-background.png") 50% 100% no-repeat;
+  background-size: contain;
+}
+
+$header-curvature: 80px;
+
+.curvature::before {
+  content: "";
+  height: $header-curvature;
+  left: 0;
+  width: 100vw;
+  background: white;
+  transform: translateY(-$header-curvature);
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: 0;
+}
+
+.form-container {
+  height: 50%;
+  background: white;
+
+  header, ol {
+    transform: translateY(-5vh);
+  }
+}
+
+header {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--ion-color-dark-tint);
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  padding: 0 16px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  margin: 1em 0;
+}
+
+ion-button {
+  height: 3em;
+}
+
+.button-with-icon-left {
+  display: flex;
+  flex-direction: row;
+
+  ion-icon {
+    flex: 1;
+  }
+
+  span {
+    flex: 9;
+    transform: translateX(-1em);
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}
+
+.logo-google, .mobile-number {
+
+  span, ion-icon {
+    color: var(--ion-color-dark-tint);
+  }
+
+}
+
+@media (max-width: 359px) {
+
+  ol {
+    width: 90%;
+  }
+
+}
