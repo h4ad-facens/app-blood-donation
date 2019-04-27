@@ -3,7 +3,6 @@
 
 /** Ionic CSS Variables **/
 :root {
-  font-family: Monteserrat, sans-serif;
 
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -85,5 +84,15 @@
     --ion-color-contrast-rgb: 255,255,255;
     --ion-color-shade: #274688;
     --ion-color-tint: #4162a4;
+  }
+
+  /** facebook   */
+  .ion-color-rose {
+    --ion-color-base: #FF217A;
+    --ion-color-base-rgb: 255,33,122;
+    --ion-color-contrast: #ffffff;
+    --ion-color-contrast-rgb: 255,255,255;
+    --ion-color-shade: #e01d6b;
+    --ion-color-tint: #ff3787;
   }
 }

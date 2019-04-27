@@ -1,5 +1,7 @@
 {
   "name": "blood-donation",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

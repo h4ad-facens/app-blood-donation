@@ -1,0 +1,146 @@
+.header-md:after {
+  display: none;
+}
+
+* {
+  --color: #4e4e4e;
+}
+
+div {
+  display: flex;
+}
+
+ion-title, ion-label {
+  font-weight: bold;
+}
+
+ion-input {
+  border-radius: 40px;
+  background-color: #f4f4f4;
+  --padding-start: 32px !important;
+  --padding-end: 32px;
+  --padding-bottom: 16px;
+  --padding-top: 16px;
+  --placeholder-font-weight: bold;
+  font-size: 0.8em;
+}
+
+ion-item {
+  margin: 16px 0;
+}
+
+section {
+  margin: 0 16px;
+}
+
+section:first-child {
+  margin: 0;
+}
+
+.select-gender-container {
+  flex-direction: row;
+}
+
+.man-gender, .woman-gender {
+  flex: 1;
+  margin-top: 8px;
+}
+
+h1 {
+  font-size: 0.9em;
+  color: black;
+}
+
+ion-radio {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.gender-section {
+
+  ion-icon {
+    padding: 8px;
+    font-size: 4em;
+  }
+
+  ion-radio[value='0'][aria-checked="true"] ~ ion-icon {
+    color: #0cd1e8;
+  }
+
+  ion-radio[value='1'][aria-checked="true"] ~ ion-icon {
+    color: #FF217A;
+  }
+
+}
+
+.man-gender, .woman-gender {
+  position: relative;
+  color: #e2e2e2;
+}
+
+.man-gender {
+  border-color: #e2e2e2;
+  border-right-width: 2px;
+  border-style: solid;
+}
+
+.man-gender ion-icon {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.woman-gender ion-icon {
+  margin-left: 16px;
+  margin-right: auto;
+}
+
+.blood-type {
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.blood-circle {
+  height: 100%;
+  width: 100%;
+  border: #a2a4ab solid 2px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+span {
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.blood-section, .blood-types {
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.blood-section ion-radio[aria-checked="true"] ~ .blood-circle {
+  border-style: none;
+  background-image: linear-gradient(#FF217A, #FF4D4D);
+  color: white;
+}
+
+.agree-container {
+  margin-top: 16px;
+}
+
+ion-label {
+  font-size: 0.7em;
+  color: #4E4E4E;
+}
+
+ion-checkbox {
+  width: 1.5em;
+  height: 1.2em;
+  margin-right: 8px;
+}

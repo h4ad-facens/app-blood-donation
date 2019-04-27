@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Torne-se um doador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <section class="input-section">
+    <ion-item>
+      <ion-input type="text" placeholder="Nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="email" placeholder="E-Mail"></ion-input>
+    </ion-item>
+  </section>
+
+  <section class="gender-section">
+    <h1>Gênero</h1>
+
+    <ion-radio-group>
+      <div class="select-gender-container">
+        <div class="man-gender">
+          <ion-radio name="select-gender" value="0"></ion-radio>
+          <ion-icon src="../../assets/icon/man.svg" removeSvgStroke></ion-icon>
+        </div>
+
+        <div class="woman-gender">
+          <ion-radio name="select-gender" value="1"></ion-radio>
+          <ion-icon src="../../assets/icon/woman.svg" removeSvgStroke></ion-icon>
+        </div>
+      </div>
+    </ion-radio-group>
+  </section>
+
+  <section class="blood-section">
+    <h1>Selecione seu Tipo Sanguíneo</h1>
+
+    <ion-radio-group>
+      <div class="blood-types">
+          <div class="blood-type" *ngFor="let bloodType of bloodTypes">
+            <ion-radio name="blood-type" [value]="bloodType"></ion-radio>
+
+            <div class="blood-circle">
+              <span>{{ bloodType }}</span>
+            </div>
+          </div>
+      </div>
+    </ion-radio-group>
+
+    <div class="agree-container">
+      <ion-checkbox color="rose"></ion-checkbox>
+      <ion-label>Você quer deixar seu número de contato visível para outras pessoas?</ion-label>
+    </div>
+
+  </section>
+
+  <section class="button-section">
+    <ion-button margin-top color="rose" expand="block" shape="round">Feito</ion-button>
+  </section>
+
+</ion-content>
