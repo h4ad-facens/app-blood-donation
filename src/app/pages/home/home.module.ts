@@ -6,10 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { ElementsModule } from '../../shared/elements/elements.module';
-import { LoginPage } from './login.page';
+import { HomePage } from './home.page';
 
 const routes: Routes = [
-  { path: '', component: LoginPage }
+  { path: '', component: HomePage }
 ];
 
 @NgModule({
@@ -20,6 +20,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ElementsModule,
   ],
-  declarations: [LoginPage]
+  declarations: [
+    HomePage
+  ]
 })
-export class LoginPageModule {}
+export class HomePageModule {}

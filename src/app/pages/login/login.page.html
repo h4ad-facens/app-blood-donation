@@ -10,22 +10,13 @@
 
     <ol>
       <li>
-        <ion-button class="button-with-icon-left" expand="block" shape="round" color="facebook">
-          <ion-icon class="to-left" name="logo-facebook"></ion-icon>
-          <span>Facebook</span>
-        </ion-button>
+        <app-button-left-icon color="facebook" icon="logo-facebook" (click)="performLogin()">Facebook</app-button-left-icon>
       </li>
       <li>
-        <ion-button class="button-with-icon-left logo-google" expand="outline" shape="round" color="medium">
-          <ion-icon name="logo-google"></ion-icon>
-          <span>Google</span>
-        </ion-button>
+        <app-button-left-icon color="medium" icon="logo-google" expand="outline" (click)="performLogin()">Google</app-button-left-icon>
       </li>
       <li>
-        <ion-button class="button-with-icon-left mobile-number" expand="outline" shape="round" color="medium">
-          <ion-icon name="md-apps"></ion-icon>
-          <span>Número de Celular</span>
-        </ion-button>
+        <app-button-left-icon color="medium" icon="md-apps" expand="outline" (click)="performLogin()">Número de Celular</app-button-left-icon>
       </li>
     </ol>
 

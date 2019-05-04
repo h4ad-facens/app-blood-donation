@@ -1,0 +1,29 @@
+ion-button {
+  height: var(--button-height, 3em);
+}
+
+.button-with-icon-left {
+  display: flex;
+  flex-direction: row;
+}
+
+ion-icon {
+  flex: 1;
+}
+
+ion-icon ~ span {
+  transform: translateX(1em);
+}
+
+span {
+  flex: 9;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight, bolder);
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}

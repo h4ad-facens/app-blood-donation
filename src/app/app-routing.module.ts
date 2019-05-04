@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', loadChildren: () => LoginPageModule },
   { path: 'become-donor', loadChildren: () => BecomeDonorPageModule },
+  { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
 ];
 
 @NgModule({

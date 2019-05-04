@@ -1,0 +1,58 @@
+:host {
+  width: 100%;
+}
+
+div {
+  display: flex;
+}
+
+.card {
+  height: var(--card-height, 7em);
+  margin: 8px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.text-container {
+  flex-direction: column;
+  color: white;
+  max-width: 50%;
+}
+
+.text-container {
+  flex: 4;
+}
+
+.button-container {
+  flex: 6;
+}
+
+.text-container, .button-container {
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2 {
+  font-weight: bolder;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  padding: 0 8px;
+}
+
+h1 {
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 0.8em;
+}
+
+app-button-left-icon {
+  align-self: center;
+  font-weight: bolder;
+  --font-size: 0.7em;
+  --button-height: 2.5em;
+}

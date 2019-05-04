@@ -52,26 +52,6 @@ li {
   margin: 1em 0;
 }
 
-ion-button {
-  height: 3em;
-}
-
-.button-with-icon-left {
-  display: flex;
-  flex-direction: row;
-
-  ion-icon {
-    flex: 1;
-  }
-
-  span {
-    flex: 9;
-    transform: translateX(-1em);
-    text-transform: capitalize;
-    font-weight: bold;
-  }
-}
-
 .logo-google, .mobile-number {
 
   span, ion-icon {

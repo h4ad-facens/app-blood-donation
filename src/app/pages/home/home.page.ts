@@ -1,6 +1,7 @@
 //#region Imports
 
 import { Component } from '@angular/core';
+
 import { NavController } from '@ionic/angular';
 
 //#endregion
@@ -8,19 +9,19 @@ import { NavController } from '@ionic/angular';
 //#region Components
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
 })
 
 //#endregion
 
-//#region Components
+//#region Class
 
 /**
- * A classe que representa a página de login
+ * A classe que representa a página inicial do aplicativo
  */
-export class LoginPage {
+export class HomePage {
 
   //#region Constructor
 
@@ -36,10 +37,10 @@ export class LoginPage {
   //#region Public Methods
 
   /**
-   * Método que realiza o login
+   * Método que abre a página para encontrar um doador
    */
-  public async performLogin(): Promise<void> {
-    await this.nav.navigateForward('home');
+  public async onClickFindDonor(): Promise<void> {
+    await this.nav.navigateForward('become-donor');
   }
 
   //#endregion

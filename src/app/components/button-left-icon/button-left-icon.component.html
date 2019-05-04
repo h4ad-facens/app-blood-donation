@@ -1,0 +1,9 @@
+<ion-button class="button-with-icon-left" [expand]="expand" shape="round" [color]="color">
+  <ng-container *ngIf="icon">
+    <ion-icon class="to-left" [name]="icon"></ion-icon>
+  </ng-container>
+
+  <span>
+    <ng-content></ng-content>
+  </span>
+</ion-button>
