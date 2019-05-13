@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'login', loadChildren: () => LoginPageModule },
   { path: 'become-donor', loadChildren: () => BecomeDonorPageModule },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
+  { path: 'request-blood', loadChildren: './pages/request-blood/request-blood.module#RequestBloodPageModule' },
 ];
 
 @NgModule({

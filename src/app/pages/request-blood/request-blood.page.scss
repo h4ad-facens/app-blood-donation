@@ -1,0 +1,102 @@
+ion-header:after {
+  display: none;
+}
+
+div {
+  display: flex;
+}
+
+section {
+  margin: 16px;
+}
+
+ion-label {
+  align-items: center;
+  font-weight: bolder;
+}
+
+ion-icon {
+  margin-left: 4px;
+}
+
+.field-item {
+  flex-direction: column;
+
+  ion-label {
+    display: none;
+  }
+}
+
+ion-item {
+  padding: 16px 0;
+}
+
+ion-select {
+  --padding-bottom: 12px;
+  --padding-top: 12px;
+  font-size: 0.9em;
+  max-width: unset;
+  width: 100%;
+}
+
+ion-title, h1, ion-select {
+  color: #4e4e4e;
+  font-weight: bold;
+}
+
+.blood-section {
+
+  ion-radio {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+  }
+
+
+  .blood-type {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  .blood-circle {
+    height: 100%;
+    width: 100%;
+    border: #a2a4ab solid 2px;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  span {
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+
+  &, .blood-types {
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  & ion-radio[aria-checked="true"] ~ .blood-circle {
+    border-style: none;
+    background-image: linear-gradient(#FF217A, #FF4D4D);
+    color: white;
+  }
+}
+
+.button-section {
+  & {
+    margin-top: 20px;
+  }
+
+  ion-button {
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 3rem;
+  }
+}

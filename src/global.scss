@@ -78,4 +78,16 @@ ion-item, input, ion-input {
 
 * {
   font-family: 'Montserrat', sans-serif;
+  --color: #4e4e4e;
+}
+
+ion-input, ion-select {
+  border-radius: 40px;
+  background-color: #f4f4f4;
+  --padding-start: 32px !important;
+  --padding-end: 32px;
+  --padding-bottom: 16px;
+  --padding-top: 16px;
+  --placeholder-font-weight: bold;
+  font-size: 0.8em;
 }
