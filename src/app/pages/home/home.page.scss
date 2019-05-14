@@ -1,5 +1,14 @@
-.header:after {
-  display: none;
+ion-header[data-scroll="0"].header:after, ion-header[data-scroll="0"].header-md:after {
+  animation-name: fadeOut;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+}
+
+.header:after, .header-md:after {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
 }
 
 b {
@@ -8,6 +17,10 @@ b {
 
 ion-header ion-title {
   text-align: center;
+}
+
+ion-title {
+  color: white;
 }
 
 h1 {

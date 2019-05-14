@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header #header>
   <ion-toolbar color="rose">
     <ion-buttons slot="start">
       <ion-button color="light">
@@ -14,7 +14,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content dataScroll [targetElementAttribute]="header.el">
 
   <section class="action-section">
       <app-card-with-action title="120966" subtitle="Doadores" buttonText="ENCONTRAR DOADOR" (onClickButtonEvent)="onClickFindDonor()"></app-card-with-action>
