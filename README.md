@@ -4,6 +4,9 @@ Esse é um aplicativo com intuito de divulgar e ajudar pessoas que procuram doar
 ## Intuito
 O aplicativo está sendo feito para ser entregue como um projeto da matéria de Empreendedorismo. Todo o código é publico e sintam-se livre para usar se quiserem.
 
+## Sobre o código
+Ele foi escrito com as linguagens HTML, TypeScript e CSS, utilizando o Framework Ionic para a criação de aplicativos móveis híbridos.
+
 ## Membros
 As pessoas que participaram desse projeto são:
 
