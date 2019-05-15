@@ -34,7 +34,7 @@ ion-item, input, ion-input {
   --color: #4e4e4e;
 }
 
-ion-input, ion-select {
+ion-item.item ion-input, ion-select {
   border-radius: 40px;
   background-color: #f4f4f4;
   --padding-start: 32px !important;
