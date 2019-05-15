@@ -22,16 +22,19 @@ A seguir, as imagens de como está atualmente o aplicativo.
 
 #### A página de login
 
-![A página de login](git_images/login.png)
+<img src="git_images/login.png" alt="A página de login" width="360px" height="620">
+
 ---
 #### A página de início
 
-![A página de início](git_images/home.png)
+<img src="git_images/home.png" alt="A página de início" width="360px" height="620">
+
 ---
 #### A página para se tornar um doador
 
-![A página para se tornar um doador](git_images/become-donor.png)
+<img src="git_images/become-donor.png" alt="A página para se tornar um doador" width="360px" height="620">
+
 ---
 #### A página para requisitar sangue
 
-![A página para requisitar sangue](git_images/request-blood.png)
+<img src="git_images/request-blood.png" alt="A página para requisitar sangue" width="360px" height="620">
