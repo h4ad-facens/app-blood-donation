@@ -1,6 +1,9 @@
 //#region Imports
 
 import { Component } from '@angular/core';
+
+import { NavController } from '@ionic/angular';
+
 import { BloodType } from '../../models/enums/blood.type';
 
 //#endregion
@@ -24,7 +27,9 @@ export class BecomeDonorPage {
   /**
    * Construtor padrão
    */
-  constructor() { }
+  constructor(
+    private nav: NavController,
+  ) {}
 
   //#endregion
 
@@ -43,6 +48,17 @@ export class BecomeDonorPage {
     BloodType.O_MINUS,
     BloodType.O_PLUS,
   ];
+
+  //#endregion
+
+  //#region Public Methods
+
+  /**
+   * Método que realiza o registro de um doador
+   */
+  public async registerDonor(): Promise<void> {
+    await this.nav.navigateRoot('home');
+  }
 
   //#endregion
 

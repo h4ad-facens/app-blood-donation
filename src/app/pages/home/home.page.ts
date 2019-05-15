@@ -40,7 +40,7 @@ export class HomePage {
    * Método que abre a página para encontrar um doador
    */
   public async onClickFindDonor(): Promise<void> {
-    await this.nav.navigateForward('become-donor');
+    await this.nav.navigateForward('request-blood');
   }
 
   //#endregion

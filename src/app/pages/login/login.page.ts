@@ -39,7 +39,7 @@ export class LoginPage {
    * Método que realiza o login
    */
   public async performLogin(): Promise<void> {
-    await this.nav.navigateForward('home');
+    await this.nav.navigateRoot('become-donor');
   }
 
   //#endregion
