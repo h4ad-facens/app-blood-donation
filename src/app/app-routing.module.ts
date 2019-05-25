@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
-import { LoginPageModule } from './pages/login/login.module';
-import { BecomeDonorPageModule } from './pages/become-donor/become-donor.module';
-
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', loadChildren: () => LoginPageModule },
-  { path: 'become-donor', loadChildren: () => BecomeDonorPageModule },
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'become-donor', loadChildren: './pages/become-donor/become-donor.module#BecomeDonorPageModule' },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
   { path: 'request-blood', loadChildren: './pages/request-blood/request-blood.module#RequestBloodPageModule' },
 ];
