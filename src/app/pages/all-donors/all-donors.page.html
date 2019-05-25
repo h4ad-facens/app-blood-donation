@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button color="rose"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Busque por doadores</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button color="rose">
+        <ion-icon slot="icon-only" name="md-funnel"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ng-container *ngFor="let i of [0, 1, 2, 3, 4, 5, 6]">
+
+    <div class="donor-card">
+
+      <div class="donor-avatar">
+        <ion-img shadowStyle="img{border-radius:50% !important;}" src="https://media.licdn.com/dms/image/C4D03AQFiexdun7-uZw/profile-displayphoto-shrink_100_100/0?e=1564012800&v=beta&t=6GFIJ7MqGRsQgi-29Dwyv3TEP-1c5euP9sn6dkZ6xwg" alt="A imagem do doador."></ion-img>
+      </div>
+
+      <div class="donor-information">
+        <h1 class="donor-name">Vinícius Lourenço</h1>
+        <ion-note>
+          <ion-icon name="pin"></ion-icon>
+          <span>Sorocaba</span>
+        </ion-note>
+
+        <ion-button shadowStyle=":host(.button-solid.ion-color) .button-native{color:#FF217A!important;border-color: #d6d8df!important;}" color="light" shape="round" expand="outline">Peça por ajuda</ion-button>
+      </div>
+
+      <div class="donor-blood-type">
+        <div class="blood-type">
+          <div class="blood-circle">
+            <span>A+</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </ng-container>
+
+</ion-content>

@@ -1,0 +1,101 @@
+.donor-card {
+  &:first-child {
+    margin-top: 12px;
+  }
+
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: calc(75px + 16px) calc(100% - 75px - 16px - 45px - 16px) calc(45px + 16px);
+  padding: 16px 0;
+  box-shadow: #a2a4ab 0 -1px 3px -1px, #a2a4ab 0 3px 3px -3px;
+}
+
+
+.donor-avatar {
+  margin-left: 16px;
+
+  ion-img {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+.donor-information {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+
+  .donor-name {
+    margin-top: 4px;
+    color: #4a4a4a;
+    font-weight: bold;
+  }
+
+  h1, span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  ion-note {
+    display: flex;
+    margin: 8px 0 4px 0;
+
+    span, ion-icon {
+      font-size: 0.9em;
+    }
+
+    ion-icon + span {
+      margin-left: 4px;
+    }
+  }
+}
+
+ion-button {
+  height: 2.2em;
+  text-transform: capitalize;
+  --font-weight: bold;
+  --ripple-color: #d8d9dc;
+  --color-actived: #FF217A;
+}
+
+.donor-blood-type {
+  flex-direction: column;
+  justify-content: start;
+
+  ion-radio {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .blood-type {
+    width: 45px;
+    height: 45px;
+    position: relative;
+  }
+
+  .blood-circle {
+    height: 100%;
+    width: 100%;
+    border: #a2a4ab solid 1px;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  span {
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #FF217A;
+  }
+
+  &, .blood-types, .blood-circle {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+}
