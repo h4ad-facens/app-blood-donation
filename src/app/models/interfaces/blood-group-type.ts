@@ -9,8 +9,14 @@ import { BloodType } from '../enums/blood.type';
  */
 export interface BloodGroupType {
 
+  /**
+   * O texto do tipo de sangue
+   */
   bloodTypeText: string;
 
+  /**
+   * O tipo de sangue
+   */
   bloodType: BloodType;
 
 }

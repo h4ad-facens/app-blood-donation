@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
+import { DonorsModule } from '../../shared/donors/donors.module';
 import { ElementsModule } from '../../shared/elements/elements.module';
 
 import { AllDonorsPage } from './all-donors.page';
@@ -21,7 +22,8 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    ElementsModule
+    ElementsModule,
+    DonorsModule
   ],
   declarations: [AllDonorsPage]
 })

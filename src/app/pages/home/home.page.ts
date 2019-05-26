@@ -43,6 +43,13 @@ export class HomePage {
     await this.nav.navigateForward('all-donors');
   }
 
+  /**
+   * Método que abre a página para ver as requisições por sangue
+   */
+  public async onClickSeeRequests(): Promise<void> {
+    await this.nav.navigateForward('see-requests');
+  }
+
   //#endregion
 
 }

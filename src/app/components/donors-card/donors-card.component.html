@@ -1,0 +1,37 @@
+<div class="donor-card">
+
+  <div class="donor-avatar">
+    <ion-img shadowStyle="img{border-radius:50% !important;}" [src]="content.image" alt="A imagem do doador."></ion-img>
+  </div>
+
+  <div class="donor-information">
+    <h1 class="donor-name">{{ content.name }}</h1>
+    <ion-note>
+      <ion-icon name="pin"></ion-icon>
+      <span>{{ content.place }}</span>
+    </ion-note>
+
+    <ion-button shadowStyle=":host(.button-solid.ion-color) .button-native{color:#FF217A!important;border-color: #d6d8df!important;}" color="light" shape="round" expand="outline">
+      <ng-template [ngIf]="content.isRequest" [ngIfElse]="showHelp">
+        {{ content.cellphone }}
+      </ng-template>
+
+      <ng-template #showHelp>
+        Peça por ajuda
+      </ng-template>
+    </ion-button>
+  </div>
+
+  <div class="donor-blood-type">
+    <div *ngIf="content.isRequest" class="donor-requested">
+      <span>Requisitado</span>
+    </div>
+
+    <div class="blood-type">
+      <div class="blood-circle">
+        <span>{{ content.bloodType }}</span>
+      </div>
+    </div>
+  </div>
+
+</div>

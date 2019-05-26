@@ -14,33 +14,9 @@
 
 <ion-content>
 
-  <ng-container *ngFor="let i of [0, 1, 2, 3, 4, 5, 6]">
+  <ng-container *ngFor="let donorInfo of [donor, donor, donor, donor, donor]">
 
-    <div class="donor-card">
-
-      <div class="donor-avatar">
-        <ion-img shadowStyle="img{border-radius:50% !important;}" src="https://media.licdn.com/dms/image/C4D03AQFiexdun7-uZw/profile-displayphoto-shrink_100_100/0?e=1564012800&v=beta&t=6GFIJ7MqGRsQgi-29Dwyv3TEP-1c5euP9sn6dkZ6xwg" alt="A imagem do doador."></ion-img>
-      </div>
-
-      <div class="donor-information">
-        <h1 class="donor-name">Vinícius Lourenço</h1>
-        <ion-note>
-          <ion-icon name="pin"></ion-icon>
-          <span>Sorocaba</span>
-        </ion-note>
-
-        <ion-button shadowStyle=":host(.button-solid.ion-color) .button-native{color:#FF217A!important;border-color: #d6d8df!important;}" color="light" shape="round" expand="outline">Peça por ajuda</ion-button>
-      </div>
-
-      <div class="donor-blood-type">
-        <div class="blood-type">
-          <div class="blood-circle">
-            <span>A+</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <app-donors-card [content]="donorInfo"></app-donors-card>
 
   </ng-container>
 
