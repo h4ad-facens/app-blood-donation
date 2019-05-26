@@ -17,9 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
   entryComponents: [],
   imports: [
     BrowserModule,
-    IonicModule.forRoot({
-      backButtonText: 'Voltar',
-    }),
+    IonicModule.forRoot(),
     AppRoutingModule,
   ],
   providers: [

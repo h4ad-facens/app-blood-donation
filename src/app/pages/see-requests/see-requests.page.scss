@@ -1,0 +1,27 @@
+ion-header[data-scroll="0"].header:after, ion-header[data-scroll="0"].header-md:after {
+  animation-name: fadeOut;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+}
+
+.header:after, .header-md:after {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+}
+
+
+.info-section {
+  background: var(--ion-color-rose);
+  padding-bottom: 48px;
+
+  app-card-with-action {
+    --card-margin: 0 8px 0 8px;
+  }
+}
+
+.donors-section {
+  margin-top: -40px;
+  padding: 0 16px;
+}

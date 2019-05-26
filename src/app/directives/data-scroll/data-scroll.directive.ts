@@ -1,6 +1,6 @@
 //#region Imports
 
-import { AfterViewInit, Directive, ElementRef, Input, OnDestroy } from '@angular/core';
+import { AfterContentInit, AfterViewInit, Directive, ElementRef, Input, OnDestroy } from '@angular/core';
 
 //#endregion
 
@@ -14,7 +14,7 @@ import { AfterViewInit, Directive, ElementRef, Input, OnDestroy } from '@angular
 
 //#region Class
 
-export class DataScrollDirective implements AfterViewInit, OnDestroy {
+export class DataScrollDirective implements AfterContentInit, OnDestroy {
 
   //#region Constructor
 
@@ -48,7 +48,7 @@ export class DataScrollDirective implements AfterViewInit, OnDestroy {
   /**
    * Método executado após a view carregar
    */
-  public ngAfterViewInit(): void {
+  public ngAfterContentInit(): void {
     // Verifica se há a algum elemento com a classe .inner-scroll
     // Se tiver, indica que a diretiva está atrelada a um ion-content
     // E o container de scroll é a div com essa classe.

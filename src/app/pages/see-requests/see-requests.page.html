@@ -1,7 +1,34 @@
-<ion-header>
-
+<ion-header #header>
+	<ion-toolbar color="rose">
+		<ion-buttons slot="start">
+			<ion-back-button color="light"></ion-back-button>
+		</ion-buttons>
+		<ion-buttons slot="primary">
+			<ion-button color="light">
+				<ion-icon slot="icon-only" name="md-funnel"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content dataScroll [targetElementAttribute]="header.el">
+
+	<section class="info-section">
+
+		<app-card-with-action title="61651" subtitle="novas requisições" buttonText="Adicionar Requisições">
+
+		</app-card-with-action>
+
+	</section>
+
+	<section class="donors-section">
+
+		<ng-container *ngFor="let donorInfo of [donor, donor, donor, donor, donor]">
+
+			<app-donors-card [content]="donorInfo"></app-donors-card>
+
+		</ng-container>
+
+	</section>
 
 </ion-content>

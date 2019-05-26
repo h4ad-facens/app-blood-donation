@@ -5,13 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
+import { DirectivesModule } from '../../shared/directives/directives.module';
+import { DonorsModule } from '../../shared/donors/donors.module';
+import { ElementsModule } from '../../shared/elements/elements.module';
 import { SeeRequestsPage } from './see-requests.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: SeeRequestsPage
-  }
+  { path: '', component: SeeRequestsPage }
 ];
 
 @NgModule({
@@ -19,7 +19,10 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ElementsModule,
+    DonorsModule,
+    DirectivesModule,
   ],
   declarations: [SeeRequestsPage]
 })
