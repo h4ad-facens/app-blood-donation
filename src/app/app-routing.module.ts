@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
   { path: 'request-blood', loadChildren: './pages/request-blood/request-blood.module#RequestBloodPageModule' },
   { path: 'all-donors', loadChildren: './pages/all-donors/all-donors.module#AllDonorsPageModule' },
+  { path: 'see-requests', loadChildren: './pages/see-requests/see-requests.module#SeeRequestsPageModule' },
 ];
 
 @NgModule({
@@ -16,4 +17,5 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
