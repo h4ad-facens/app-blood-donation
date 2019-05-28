@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
-import { RemoveIonIconSvgStrokeDirective } from '../../directives/icon-stroke-remove/icon-stroke-remove.directive';
 
+import { RemoveIonIconSvgStrokeDirective } from '../../directives/icon-stroke-remove/icon-stroke-remove.directive';
 import { BecomeDonorPage } from './become-donor.page';
 
 const routes: Routes = [

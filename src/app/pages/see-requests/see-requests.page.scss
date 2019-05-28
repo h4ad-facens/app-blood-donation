@@ -14,6 +14,7 @@ ion-header[data-scroll="0"].header:after, ion-header[data-scroll="0"].header-md:
 
 .info-section {
   background: var(--ion-color-rose);
+  padding-top: 16px;
   padding-bottom: 48px;
 
   app-card-with-action {
