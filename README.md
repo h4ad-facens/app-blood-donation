@@ -25,19 +25,29 @@ A seguir, as imagens de como está atualmente o aplicativo.
 
 #### A página de login
 
-<img src="git_images/login.png" alt="A página de login" width="360px" height="620">
-
----
-#### A página de início
-
-<img src="git_images/home.png" alt="A página de início" width="360px" height="620">
+<img src="git_images/localhost_8100_login(iPhone 6_7_8 Plus).png" alt="A página de login" width="360px" height="620">
 
 ---
 #### A página para se tornar um doador
 
-<img src="git_images/become-donor.png" alt="A página para se tornar um doador" width="360px" height="620">
+<img src="git_images/localhost_8100_become-donor(iPhone 6_7_8 Plus).png" alt="A página para se tornar um doador" width="360px" height="620">
+
+---
+#### A página de início
+
+<img src="git_images/localhost_8100_home(iPhone 6_7_8 Plus).png" alt="A página de início" width="360px" height="620">
 
 ---
 #### A página para requisitar sangue
 
-<img src="git_images/request-blood.png" alt="A página para requisitar sangue" width="360px" height="620">
+<img src="git_images/localhost_8100_request-blood(iPhone 6_7_8 Plus).png" alt="A página para requisitar sangue" width="360px" height="620">
+
+---
+#### A página para buscar doadores
+
+<img src="git_images/localhost_8100_all-donors(iPhone 6_7_8 Plus).png" alt="A página para buscar doadores." width="360px" height="620">
+
+---
+#### A página para ver requisições de sangue
+
+<img src="git_images/localhost_8100_see-requests(iPhone 6_7_8 Plus).png" alt="A página para ver requisições de sangue." width="360px" height="620">
