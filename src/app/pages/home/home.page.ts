@@ -40,14 +40,14 @@ export class HomePage {
    * Método que abre a página para encontrar um doador
    */
   public async onClickFindDonor(): Promise<void> {
-    await this.nav.navigateForward('home/all-donors');
+    await this.nav.navigateForward('all-donors');
   }
 
   /**
    * Método que abre a página para ver as requisições por sangue
    */
   public async onClickSeeRequests(): Promise<void> {
-    await this.nav.navigateForward('home/see-requests');
+    await this.nav.navigateForward('see-requests');
   }
 
   //#endregion
