@@ -1,6 +1,9 @@
 //#region Imports
 
 import { Component } from '@angular/core';
+
+import { NavController } from '@ionic/angular';
+
 import { BloodType } from '../../models/enums/blood.type';
 import { DonorProxy } from '../../models/proxys/donor.proxy';
 
@@ -26,8 +29,9 @@ export class SeeRequestsPage {
   /**
    * Construtor padrão
    */
-  constructor() {
-  }
+  constructor(
+    private router: NavController,
+  ) {}
 
   //#endregion
 
@@ -80,5 +84,17 @@ export class SeeRequestsPage {
   ];
 
   //#endregion
+
+  //#region Public Methods
+
+  /**
+   * Método que abre a página para requisitar sangue
+   */
+  public async addRequestBlood(): Promise<void> {
+    await this.router.navigateForward('/request-blood');
+  }
+
+  //#endregion
+
 
 }

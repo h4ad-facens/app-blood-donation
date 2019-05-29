@@ -2,6 +2,8 @@
 
 import { Component } from '@angular/core';
 
+import { NavController } from '@ionic/angular';
+
 import { BloodType } from '../../models/enums/blood.type';
 
 //#endregion
@@ -23,7 +25,9 @@ export class RequestBloodPage {
   /**
    * Construtor padrão
    */
-  constructor() {}
+  constructor(
+    private router: NavController,
+  ) {}
 
   //#endregion
 
@@ -42,6 +46,17 @@ export class RequestBloodPage {
     BloodType.O_MINUS,
     BloodType.O_PLUS,
   ];
+
+  //#endregion
+
+  //#region Public Methods
+
+  /**
+   * Método que retorna para a página anterior
+   */
+  public async goBack(): Promise<void> {
+    await this.router.pop();
+  }
 
   //#endregion
 
