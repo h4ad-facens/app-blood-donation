@@ -4,12 +4,10 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 
 import { DataScrollDirective } from '../../directives/data-scroll/data-scroll.directive';
-import { ShadowStyleDirective } from '../../directives/shadow-style/shadow-style.directive';
 
 @NgModule({
   declarations: [
     DataScrollDirective,
-    ShadowStyleDirective,
   ],
   imports: [
     CommonModule,
@@ -17,7 +15,6 @@ import { ShadowStyleDirective } from '../../directives/shadow-style/shadow-style
   ],
   exports: [
     DataScrollDirective,
-    ShadowStyleDirective,
   ]
 })
 
