@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 
-import { NavController } from '@ionic/angular';
+import { AlertController, NavController } from '@ionic/angular';
 
 //#endregion
 
@@ -30,6 +30,7 @@ export class HomePage {
    */
   constructor(
     private nav: NavController,
+    private alert: AlertController,
   ) {}
 
   //#endregion
@@ -48,6 +49,36 @@ export class HomePage {
    */
   public async onClickSeeRequests(): Promise<void> {
     await this.nav.navigateForward('see-requests');
+  }
+
+  /**
+   * Método que abre a pesquisa
+   */
+  public async onClickSearch(): Promise<void> {
+    const alert = await this.alert.create({
+      message: 'Quando for implementado, ele permitirá que você filtre as noticias.',
+      header: 'Sobre o filtro.',
+      buttons: [
+        { text: 'Ok!', handler: () => {} }
+      ]
+    });
+
+    await alert.present();
+  }
+
+  /**
+   * Método que adicioana post
+   */
+  public async onClickAddPost(): Promise<void> {
+    const alert = await this.alert.create({
+      message: 'Quando for implementado, ele permitirá que você adicione postagens para outros usuários verem.',
+      header: 'Sobre as noticias.',
+      buttons: [
+        { text: 'Ok!', handler: () => {} }
+      ]
+    });
+
+    await alert.present();
   }
 
   //#endregion

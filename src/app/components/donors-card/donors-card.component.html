@@ -11,7 +11,7 @@
       <span>{{ content.place }}</span>
     </ion-note>
 
-    <ion-button shadowStyle=":host(.button-solid.ion-color) .button-native{color:#FF217A!important;border-color: #d6d8df!important;}" color="light" shape="round" expand="outline">
+    <ion-button (click)="onClickPhone()" shadowStyle=":host(.button-solid.ion-color) .button-native{color:#FF217A!important;border-color: #d6d8df!important;}" color="rose" shape="round" expand="outline">
       <ng-template [ngIf]="content.isRequest" [ngIfElse]="showHelp">
         {{ content.cellphone }}
       </ng-template>

@@ -1,6 +1,7 @@
 //#region Imports
 
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 import { BloodType } from '../../models/enums/blood.type';
 import { DonorProxy } from '../../models/proxys/donor.proxy';
@@ -27,7 +28,9 @@ export class AllDonorsPage {
   /**
    * Construtor padrão
    */
-  constructor() {}
+  constructor(
+    private alert: AlertController,
+  ) {}
 
   //#endregion
 
@@ -78,6 +81,21 @@ export class AllDonorsPage {
       isRequest: true
     },
   ];
+
+  /**
+   * Método executado ao clicar no botão de filtro
+   */
+  public async onClickFilter(): Promise<void> {
+    const alert = await this.alert.create({
+      message: 'Quando for implementado, ele permitirá você filtrar os doadores.',
+      header: 'Sobre o filtro.',
+      buttons: [
+        { text: 'Ok!', handler: () => {} }
+      ]
+    });
+
+    await alert.present();
+  }
 
   //#endregion
 

@@ -2,6 +2,8 @@
 
 import { Component, Input } from '@angular/core';
 
+import { AlertController } from '@ionic/angular';
+
 import { DonorProxy } from '../../models/proxys/donor.proxy';
 
 //#endregion
@@ -27,7 +29,9 @@ export class DonorsCardComponent {
   /**
    * Construtor padrão
    */
-  constructor() {}
+  constructor(
+    private alert: AlertController,
+  ) {}
 
   //#endregion
 
@@ -38,6 +42,25 @@ export class DonorsCardComponent {
    */
   @Input()
   public content: DonorProxy;
+
+  //#endregion
+
+  //#region Public Methods
+
+  /**
+   * Método que executa uma ação ao clicar no telefone
+   */
+  public async onClickPhone(): Promise<void> {
+    const alert = await this.alert.create({
+      message: 'Quando for implementado, o aplicativo redirecionará o usuário para o WhatsApp, para que possa conversar com o doador ou quem está requisitando.',
+      header: 'Sobre a implementação.',
+      buttons: [
+        { text: 'Ok!', handler: () => {} }
+      ]
+    });
+
+    await alert.present();
+  }
 
   //#endregion
 

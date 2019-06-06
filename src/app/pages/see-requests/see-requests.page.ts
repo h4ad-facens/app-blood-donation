@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 
-import { NavController } from '@ionic/angular';
+import { AlertController, NavController } from '@ionic/angular';
 
 import { BloodType } from '../../models/enums/blood.type';
 import { DonorProxy } from '../../models/proxys/donor.proxy';
@@ -31,6 +31,7 @@ export class SeeRequestsPage {
    */
   constructor(
     private router: NavController,
+    private alert: AlertController,
   ) {}
 
   //#endregion
@@ -92,6 +93,21 @@ export class SeeRequestsPage {
    */
   public async addRequestBlood(): Promise<void> {
     await this.router.navigateForward('/request-blood');
+  }
+
+  /**
+   * Método executado ao clicar no botão de filtro
+   */
+  public async onClickFilter(): Promise<void> {
+    const alert = await this.alert.create({
+      message: 'Quando for implementado, ele permitirá você filtrar as requisições por sangue.',
+      header: 'Sobre o filtro.',
+      buttons: [
+        { text: 'Ok!', handler: () => {} }
+      ]
+    });
+
+    await alert.present();
   }
 
   //#endregion
